@@ -1,0 +1,189 @@
+
+
+					Assignment 1
+
+
+1. Write a Python code to calculate Permutation (5,3)
+
+import itertools
+
+a = [5,3]
+
+permut = itertools.permutations(a)
+
+for i in list(permut):
+    print(i)
+
+output: (5, 3)
+	(3, 5)
+
+
+2.  # write the python code to find the combination (15,3)
+
+from itertools import combinations
+
+combi = combinations([15,3],2)
+
+for i in list(combi):
+    print(i)
+
+output: (15, 3)
+
+
+3.Write a Python code that takes the degree as input from the user and convert it into radian.
+
+
+# taking input from the user in integer
+degree = int(input("Enter the temperature in degree: "))
+
+PI = 3.14159  # giving the value of pi 
+
+radian = degree * PI / 180 # formula to convert the degree to radian
+
+print("The temperature in radian is: ", radian)
+
+output: 
+
+Enter the temperature in degree: 55
+The temperature in radian is:  0.9599302777777778
+
+
+4. Write a Python code that inputs input from the user and calculate its square root.
+
+
+import math
+
+# taking the input from the user in integer
+
+number = int(input('Enter the number you want square root of: '))
+
+squareRoot = math.sqrt(number) # importing the math module to find out the sqrt of the number
+
+
+print(f'The square root of {number} is ', squareRoot)
+
+output: The square root of 25 is 5
+
+
+5. Write a Python code to calculate LCM of (25,55)
+
+
+# giving the input to the two numbers
+
+num1 = 25
+num2 = 55
+
+if(num1 > num2):
+    maximum = num1
+else:
+    maximum = num2
+while(True):
+    if(maximum % num1 == 0) and (maximum % num2 == 0):
+        print(maximum)
+        break
+    maximum+= 1
+
+output: 275
+
+
+6. Ask enter to enter two numbers (say, a and b). Generate two random numbers
+   between those two numbers and find a combination of these two newly generated 
+   random numbers. 
+
+
+import random
+from itertools import combinations
+a = int(input("enter the first number: "))
+b = int(input("enter the second number: "))
+randomNumbers = [random.randint(1,10),random.randint(1,10)]
+twoVariables = [a,randomNumbers,b]   # generating two random numbers
+                                                                # between those numbers
+print(randomNumbers)
+print(twoVariables)
+
+# no finding the combinations of the two newly generated number
+
+int1 = combinations(randomNumbers,2)
+
+for i in list(int1):
+    print(i)
+
+output:
+enter the first number: 2
+enter the second number: 2
+[1, 7]
+[2, [1, 7], 2]
+(1, 7)
+
+
+7. Divide 1000 by 3 and print the answer with only 5 numbers after decimal.
+
+answer = 1000 / 3
+
+print(format(answer,".5f"))
+
+output: 
+
+333.33333
+
+
+8. Write a program to convert 108 to binary.
+
+import math
+
+# declaring the variable and passin the decimal to the corresponding variable
+
+dec_number = 108
+
+#converting to the binary number using bin()
+bin_number = bin(dec_number)
+print(bin_number)
+
+# converting back to the decimal number
+print(int(bin_number,2))
+
+output: 
+
+0b1101100
+108
+
+
+
+9. Write a program to convert 1008 to hexadecimal.
+
+
+import math
+
+# declaring the variable to pass the decimal value
+
+dec_number = 1008
+
+hex_number = hex(dec_number)
+print(hex_number)
+
+# converting back to the hexadecimal number which has the base of 16
+print(int(hex_number,16))
+
+output: 
+
+0x3f0
+1008
+
+
+
+10. Write a summary of everything you learnt in this class.
+
+To be precise there are lots of things that i learnt from this class that i cant even comprehend.
+I learned about variables, integers, operators, strings, list , tuples and how to implement and play 
+with them in different places . Due to excessive involvement between teacher and other students as 
+a beginner i had the chance as well as it was an golden opportunity for me to learn new terminologies.
+I researched and learned about them. As a matter of fact, due to assignments given by Janak sir i had 
+a better understanding on how to code and of course how to google to solve variety of  problems.
+
+
+
+
+
+
+
+
